@@ -23,16 +23,16 @@ function appStart() {
 }
 
 function konten1() {
-    setTimeout(konten2, 10000);
+    setTimeout(konten2, 5000);
     document.getElementById("carousel").style.left = "0%";
 }
 
 function konten2() {
-    setTimeout(konten3, 10000);
+    setTimeout(konten3, 5000);
     document.getElementById("carousel").style.left = "-100%";
 }
 
 function konten3() {
-    setTimeout(konten1, 10000);
+    setTimeout(konten1, 5000);
     document.getElementById("carousel").style.left = "-200%";
 }
