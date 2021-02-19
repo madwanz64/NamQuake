@@ -1,0 +1,290 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.h4 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.h5 {
+    font-size: .83em;
+    font-weight: bold;
+}
+
+.h6 {
+    font-size: .67em;
+    font-weight: bold;
+}
+
+.phone {
+    margin: auto;
+    padding-top: 40px;
+    width: 260px;
+    height: 500px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.screen {
+    position: relative;
+    margin: auto;
+    width: 240px;
+    height: 400px;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.screen::-webkit-scrollbar {
+    display: none;
+}
+
+.screen {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.button {
+    width: 260px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.button i {
+    padding: 0 30px;
+}
+
+.androidmenu {
+    background-image: url(../images/androidscreen.jpg);
+    background-size: cover;
+    width: 240px;
+    height: 400px;
+    overflow: hidden;
+    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.app {
+    color: white;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+.appicons {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.appicons img {
+    width: 100%;
+}
+
+.appname {
+    padding: 5px;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.appname a {
+    color: white;
+    text-decoration: none;
+}
+
+.namquake {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    transition: 0.5s;
+}
+
+.loading {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: lightblue;
+    transition: 0.5s;
+}
+
+.startlogo {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+}
+
+.startlogo img {
+    width: 100%;
+}
+
+.startlogo h2 {
+    padding-bottom: 30px;
+}
+
+.startlogo i {
+    font-size: 1.5rem;
+}
+
+.startcompany {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+.mainpage {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    text-align: left;
+    height: 40px;
+    background-color: lightblue;
+    line-height: 40px;
+}
+
+.navbar i.fa-bars {
+    line-height: 40px;
+    padding: 0 20px;
+    float: left;
+}
+
+.navbar i.fa-cog {
+    line-height: 40px;
+    padding: 0 20px;
+    float: right;
+}
+
+.navbar p {
+    float: left;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.judul {
+    height: 20px;
+}
+
+.judul p {
+    line-height: 20px;
+}
+
+.peta {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: lightgrey;
+    vertical-align: middle;
+}
+
+.peta img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 90%;
+}
+
+.detailgempa {
+    height: 60px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+.detailgempa p {
+    margin-bottom: 3px;
+}
+
+.column1 {
+    margin: auto;
+    flex-basis: 40%;
+}
+
+.column2 {
+    margin: auto;
+    flex-basis: 30%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.column3 {
+    margin: auto;
+    flex-basis: 30%;
+}
+
+.lokasigempa {
+    height: 50px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0 15px;
+}
+
+.lokasigempa p {
+    margin: 6px 0;
+}
+
+.carousel {
+    position: absolute;
+    width: 320%;
+    transition: 0.5s;
+}
+
+.konten {
+    width: 240px;
+    height: 90px;
+    float: left;
+}

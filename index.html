@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/8a64f7f26c.js"></script>
+    <title>NamQuake</title>
+</head>
+
+<body>
+    <div class="phone">
+        <div class="screen">
+            <div id="androidmenu" class="androidmenu">
+                <div id="androidapp" class="app">
+                    <div class="appicons">
+                        <a href="javascript:void" onclick="startApp()">
+                            <img src="assets/images/namquake.png" alt="NamQuake Icons">
+                        </a>
+                    </div>
+                    <div class="appname">
+                        <a href="javascript:void" onclick="startApp()">
+                            NamQuake
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="appstart" class="namquake">
+                <div id="loading" class="loading">
+                    <div class="startlogo">
+                        <img src="assets/images/namquake.png" alt="NamQuake Logo">
+                        <h2>NamQuake</h2>
+                        <i class="fa fa-spinner fa-spin"></i>
+                    </div>
+                    <div class="startcompany">
+                        <h3>PAW Company</h3>
+                    </div>
+                </div>
+                <div id="mainpage" class="mainpage">
+                    <div class="navbar">
+                        <i class="fa fa-bars"></i>
+                        <p class="h3">NamQuake</p>
+                        <i class="fa fa-cog"></i>
+                    </div>
+                    <div class="container">
+                        <div class="petagempa">
+                            <div class="judul">
+                                <p class="h5">GEMPABUMI TERKINI</p>
+                            </div>
+                            <hr>
+                            <div class="peta">
+                                <img src="assets/images/indonesia.svg" alt="Peta Indonesia">
+                            </div>
+                            <hr>
+                            <div class="detailgempa">
+                                <div class="column1">
+                                    <p id="durasi" class="h6"></p>
+                                    <p class="h5">19 Feb 2021</p>
+                                    <p class="h6">19:50:23 WIB</p>
+                                    <script>
+                                        var now, gempa, range, stabilize;
+                                        now = new Date();
+                                        gempa = new Date(2021, 1, 19, 19, 50, 23);
+                                        range = now - gempa;
+                                        document.getElementById("durasi").innerHTML = Math.floor(range / (1000 * 60 * 60)) + " jam yang lalu";
+                                    </script>
+                                </div>
+                                <div class="column2">
+                                    <p class="h5">4.5</p>
+                                    <p class="h6">Magnitudo</p>
+                                </div>
+                                <div class="column3">
+                                    <p class="h5">23 km</p>
+                                    <p class="h6">Kedalaman</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="lokasigempa">
+                                <p class="h6">58 km Barat Laut Halmahera Barat</p>
+                                <p class="h6">(Skala MMI) Dirasakan pada Wilayah: II-III Ternate</p>
+                            </div>
+                            <hr>
+                            <div class="evakuasi">
+                                <div class="judul">
+                                    <p class="h6">CARI JALUR EVAKUASI</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        <div id="carousel" class="carousel">
+                            <div id="konten1" class="konten">
+                                <p>Konten 1</p>
+                            </div>
+                            <div id="konten2" class="konten">
+                                <p>Konten 2</p>
+                            </div>
+                            <div id="konten3" class="konten">
+                                <p>Konten 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button">
+            <i class="fa fa-bars"></i>
+            <i class="far fa-square"></i>
+            <i class="fas fa-chevron-left"></i>
+        </div>
+    </div>
+</body>
+
+</html>
